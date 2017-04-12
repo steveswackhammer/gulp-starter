@@ -17,6 +17,8 @@ Frontend development takes place in /src, and there are several gulp tasks that 
 
 The default [gulp](http://gulpjs.com/) task `gulp` will run the following tasks:
 
+----
+
 #### SCSS/CSS: `gulp styles`
 
 - Compiles the SCSS partials in /src/assets/scss/ 
@@ -26,6 +28,8 @@ The default [gulp](http://gulpjs.com/) task `gulp` will run the following tasks:
 - Places minified and non-minified CSS at /dist/assets/css/
 
 **Note:** The SCSS configuration and file structure is based on my own personal preferences, and can be reworked according to the needs of the project
+
+----
 
 #### Javascript: `gulp scripts`
 
@@ -42,6 +46,7 @@ The default [gulp](http://gulpjs.com/) task `gulp` will run the following tasks:
 
 **Note:** I generally don't add [Modernizr](https://modernizr.com/) until needed. Since it's preferable to include Modernizr in the document head, some updates to this configuration will be required if it's needed.
 
+----
 
 #### HTML Templating: `gulp html`
 
@@ -50,6 +55,7 @@ The default [gulp](http://gulpjs.com/) task `gulp` will run the following tasks:
 - Includes can be placed in /src/html/includes and included in templates using this syntax:
 `<!--=include includes/_partial-name.html -->`
 
+----
 
 #### Static Assets: `gulp copy`
 
@@ -62,11 +68,13 @@ The default [gulp](http://gulpjs.com/) task `gulp` will run the following tasks:
 
 - Image minification is not set up by default, so some config changes would be necessary to automate that process, if desired.
 
+----
 
 #### Gulp Watch: `gulp watch`
 
 - Watches for changes to HTML, SCSS, JS, and static assets in /src, and issues the corresponding gulp task.
 
+----
 
 #### Browsersync: `gulp sync`
 
