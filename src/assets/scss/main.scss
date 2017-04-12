@@ -2,15 +2,23 @@
  * Import SCSS Partials
  */
 
+/* Base */
 @import "base/_config.scss";
 @import "base/_normalize.scss";
 @import "base/_base.scss";
 @import "base/_forms.scss";
 @import "base/_buttons.scss";
-@import "base/_typography.scss";
 @import "base/_icons.scss";
+@import "base/_typography.scss";
 
-// @import "layout/_FILENAME.scss";
+/* Layout */
+@import "layout/_scaffolding.scss";
+@import "layout/_header.scss";
+@import "layout/_footer.scss";
 
-// @import "components/_FILENAME.scss";
+/* Components */
+@import "components/_navigation.scss";
+
+/* Utilities / Helpers */
+@import "base/_utilities.scss";
 
