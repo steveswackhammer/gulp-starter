@@ -90,7 +90,7 @@ gulp.task('sync', function() {
 
     gulp.watch('./dist/*.html').on('change', browserSync.reload);    
     gulp.watch('./dist/assets/css/*.css').on('change', browserSync.reload);
-    gulp.watch('./dist/assets/js/*.css').on('change', browserSync.reload);
+    gulp.watch('./dist/assets/js/*.js').on('change', browserSync.reload);
 });
 
 // Default Task
