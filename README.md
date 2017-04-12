@@ -1,4 +1,4 @@
-# Starter Files
+# Gulp Starter Files
 
 A personal set of base files and gulp tasks, intended to provide a simple, opinionated starting point to begin development on simple static websites. 
 
