@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+$ie8-mode: false !default;
+
+$img-path: "../img/";
+
+/* ==========================================================================
+   Font Faces & Sizes
+   ========================================================================== */
+
+$font-path: "../fnt/";
+
+// $font-name-a: 'Font Name', sans-serif;
+// $font-name-b: 'Font Name', serif;
+// ..etc
+
+/* 
+ * Modular Type Scale: http://www.modularscale.com/
+ *
+ * 16 ratio-based type sizes from A-P.
+ * A is the largest possible type. 
+ * P is the smallest possible type.
+ * M is the default body size.
+ *
+ * The idea is NOT to use all 16 sizes, but rather to have a system 
+ * in place so that sizes larger or smaller than what's in use are
+ * available in the future.
+ */
+
+$rem-base: 16px;
+$ms-base: 1em;
+$ms-ratio: 1.125;
+
+$sz-m: $ms-base;
+
+$sz-l: $sz-m * $ms-ratio;
+$sz-k: $sz-l * $ms-ratio; 
+$sz-j: $sz-k * $ms-ratio;
+$sz-i: $sz-j * $ms-ratio;
+$sz-h: $sz-i * $ms-ratio;
+$sz-g: $sz-h * $ms-ratio;
+$sz-f: $sz-g * $ms-ratio;
+$sz-e: $sz-f * $ms-ratio;
+$sz-d: $sz-e * $ms-ratio;
+$sz-c: $sz-d * $ms-ratio;
+$sz-b: $sz-c * $ms-ratio;
+$sz-a: $sz-b * $ms-ratio;
+$sz-n: $sz-m / $ms-ratio;
+$sz-o: $sz-n / $ms-ratio;
+$sz-p: $sz-o / $ms-ratio;
+
+@import "functions/type";
+
+/* ==========================================================================
+   Colors
+   ========================================================================== */
+
+// $color-name-a: ;
+// $color-name-b: ;
+// $color-name-c: ;
+// $color-name-d: ;
+// ..etc
+
+/* ==========================================================================
+   Color Designation
+   ========================================================================== */
+
+// Replace with color variables, add new designations as necessary
+$text-primary: 	#000; 		
+$link: 					#6797d2; 	
+$success: 			#6ad267;
+$error: 				#c24141;	
+
+/* ==========================================================================
+   Gradients
+   ========================================================================== */
+
+// $grad-NAME: linear-gradient(to right, #000 0%, #FFF 100%); 
+// ..etc
+
+/* ==========================================================================
+   Stack Order
+   ========================================================================== */
+
+$z-index-1: 	1;
+$z-index-2: 	2;
+$z-index-3: 	3;
+$z-index-4: 	4;
+$z-index-5: 	5;
+$z-index-6: 	6;
+$z-index-7: 	7;
+$z-index-8: 	8;
+$z-index-9: 	9;
+$z-index-10: 10;
+
+/* ==========================================================================
+   Grid Settings
+   ========================================================================== */
+
+/*
+ * Float-based grid configuration and mixins lifted from Foundation (version 4?), without the bloat.
+ * Use the mixins in functions/grid to roll your own grid classes as needed.
+ */
+
+$container-min-width: rem-calc(768);
+$row-width: rem-calc(1200);
+$total-columns: 12;
+$column-gutter: rem-calc(30);
+$opposite-direction: right;
+$default-float: left;
+
+@import "functions/grid";
+
+/* ==========================================================================
+   Custom Mixin Imports
+   ========================================================================== */
+
+@import "functions/breakpoints";

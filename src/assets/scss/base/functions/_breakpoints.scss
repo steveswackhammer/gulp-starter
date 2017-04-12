@@ -1,0 +1,36 @@
+/* ==========================================================================
+   Breakpoints
+   ========================================================================== */
+   
+/*
+ * Default breakpoints, update as needed depending on design.
+ */
+
+@mixin breakpoint($point) {
+  @if $ie8-mode {
+	  @content;
+	  
+  } @else {
+	@if $point == x-large {
+      @media (min-width: 81.25em) { @content; } 		/* 1300px */
+    }
+    @else if $point == large {
+      @media (min-width: 68.75em) { @content; } 		/* 1100px */
+    }
+    @else if $point == medium-large{
+      @media (min-width: 68.75em) { @content; }  		/* 960px */
+    }
+    @else if $point == medium {
+      @media (min-width: 48em) { @content; }  			/* 768px */
+    }
+    @else if $point == small {
+      @media (min-width: 37.5em) { @content; } 			/* 600px */
+    }
+    @else if $point == x-small {
+      @media (min-width: 23.4375em) { @content; }		/* 375px */
+    }
+    @else if $point == xx-small {
+      @media (min-width: 20em) { @content; } 				/* 320px */
+    }  
+  }
+}

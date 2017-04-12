@@ -1,0 +1,138 @@
+/*
+ * Typography
+ */
+
+/* ==========================================================================
+   Defaults
+   ========================================================================== */
+html {
+	font-family: sans-serif;
+  color: $text-primary;
+	line-height: 1.4;
+}
+
+p { 
+  margin-top: 0; 
+  margin-bottom: .8em;
+  line-height: 1.45;
+}
+
+p:last-of-type{
+  margin-bottom: 1.5em;
+}
+
+a { color: $text-primary; }
+
+h1,h2,h3,h4,h5,h6{
+    font-family: sans-serif;
+    line-height: 1.2;
+    margin-top: 0;
+    color: $text-primary;
+    margin-bottom: .25em;
+}
+
+/* ==========================================================================
+   Headline Base Styles
+   ========================================================================== */
+
+h1{
+  font-size: $sz-f;
+} 
+h2{
+  font-size: $sz-h;
+}
+h3{
+  font-size: $sz-i;
+}
+h4{
+  font-size: $sz-j;
+}
+h5{
+  font-size: $sz-k;
+}
+h6{
+  font-size: $sz-l;
+}
+
+/* ==========================================================================
+   Specialized Headline Styles
+   ========================================================================== */
+
+/*
+ * Class-based headline styles independent of H-tag designation  
+ */
+
+// .hd-serif{}
+// .hd-sans{}
+// .hd-alt{}
+// .hd-cool-style{}
+
+/* ==========================================================================
+   Body Content Styles
+   ========================================================================== */
+
+/* 
+ * Use on containers
+ */
+   
+.content-lrg{
+  font-size: $sz-k;
+}
+.content-med{
+  font-size: $sz-l;
+}
+.content-sm{
+  font-size: $sz-m;
+}
+.content-xsm{
+  font-size: $sz-n;
+}
+
+/* ==========================================================================
+   Type Sizes: Utility Classes
+   ========================================================================== */
+   
+/*
+ * Convenience classes for in-browser type tweaking.
+ * Prefer designated classes or h1-h6 tags where possible.
+ */
+
+.sz-a { font-size: $sz-a; }
+.sz-b { font-size: $sz-b; }
+.sz-c { font-size: $sz-c; }
+.sz-d { font-size: $sz-d; }
+.sz-e { font-size: $sz-e; }
+.sz-f { font-size: $sz-f; }
+.sz-g { font-size: $sz-g; }
+.sz-h { font-size: $sz-h; }
+.sz-i { font-size: $sz-i; }
+.sz-j { font-size: $sz-j; }
+.sz-k { font-size: $sz-k; }
+.sz-l { font-size: $sz-l; }
+.sz-m { font-size: $sz-m; }
+.sz-n { font-size: $sz-n; }
+.sz-o { font-size: $sz-o; }
+.sz-p { font-size: $sz-p; }
+
+/* ==========================================================================
+   Type Variations: Utility Classes
+   ========================================================================== */
+.up{
+    text-transform: uppercase;
+}
+
+/* ==========================================================================
+   Type Alignment: Utility Classes
+   ========================================================================== */
+
+.align-cntr{
+    text-align: center;
+}
+
+.align-rt{
+    text-align: right;
+}
+
+.align-l{
+    text-align: left;
+}
