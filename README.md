@@ -85,7 +85,16 @@ The default [gulp](http://gulpjs.com/) task `gulp` will run the following tasks:
 
 ## Credits
 
-Steve Swackhammer
+**Author:** Steve Swackhammer   
+
+*Includes adapted portions of other projects, including:*
+
+
+- [Normalize](https://necolas.github.io/normalize.css/)
+
+- [HTML5 Boilerplate](https://html5boilerplate.com/): Basic structure and some CSS
+
+- [Foundation](http://foundation.zurb.com/): Grid configuration SCSS mixins
 
 
 ## License
